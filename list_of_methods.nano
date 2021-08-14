@@ -1,0 +1,10 @@
+Given a class,  
+Given the method operator "::", which behaves exactl as lambda, does not provide delegate
+<Class>::<method> , ex: System.out::println
+
+List<Class<Type>> list = new ArrayList<>(); 
+Class<Type> methodDef = System.out::println; 
+
+better way to do it: 
+	define methods in class constructor 
+	then can be called by Class::method

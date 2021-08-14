@@ -1,0 +1,20 @@
+Can use predicates to test 
+
+import java.util.Predicate; 
+
+public static void Type(List<Type> name, Predicate<Type> condition) {
+	for (Type something: list) {
+		if (condition.test(something)) {
+			// do something
+		}
+	
+	}
+
+} 
+
+to use this, you implement a lamba expression to define condition.test 
+something like 
+	
+	Type(list, (y) -> y > z); 
+
+it returns true or false.

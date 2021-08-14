@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class SmallestDouble {
+    public static void main(String[] args) {
+	findSmallestDouble();
+    }
+
+    public static void findSmallestDouble() {
+	Scanner inp = new Scanner(System.in);
+	double to_compare;
+	int i = 1;
+	Double compare = 0.0;
+	double result;
+	System.out.print("How many doubles will be entered? ");
+	to_compare = inp.nextInt();
+	    try {
+		System.out.print("Enter a double: ");
+		compare = inp.nextDouble();
+		while (i < to_compare) {
+		    i += 1;
+		    System.out.print("Enter a double: ");
+		    result = inp.nextDouble();
+		    if (compare > result) {
+		        compare = result;
+		        }
+		}
+	    }
+	    catch (Exception e) {
+		System.out.println("Invalid input");
+	    }
+	System.out.println("The smallest double is : " + compare);
+    }
+}
